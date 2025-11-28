@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MemberHomePage">
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:background="@drawable/home_page">
+
+        <ImageView
+            android:id="@+id/member"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/member"
+            android:contentDescription="" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="140dp"
+            android:text="Hello Member"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="140dp"
+            android:text="@string/a_101_saraswati_society"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="163dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="@string/maintenance"
+                        android:textColor="@color/white"
+                        android:textSize="27sp" />
+                    <Button
+                        android:id="@+id/btn_maintenance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#00000000"
+                        android:padding="15dp"
+                        android:text="@string/pay_now"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/bill"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="5dp"
+                    android:contentDescription="@string/bills" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="@string/notices"
+                        android:textColor="@color/white"
+                        android:textSize="27sp" />
+                    <Button
+                        android:id="@+id/btn_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#00000000"
+                        android:padding="15dp"
+                        android:text="@string/expand_here"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/notice"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="10dp"
+                    android:contentDescription="@string/notices" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="@string/directory"
+                        android:textColor="@color/white"
+                        android:textSize="27sp" />
+                    <Button
+                        android:id="@+id/btn_directory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#00000000"
+                        android:padding="15dp"
+                        android:text="@string/expand_here"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/directory"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="5dp"
+                    android:contentDescription="@string/directory" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="@string/staff_details"
+                        android:textColor="@color/white"
+                        android:textSize="27sp" />
+                    <Button
+                        android:id="@+id/btn_staff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#00000000"
+                        android:padding="15dp"
+                        android:text="@string/expand_here"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/staff_details"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="5dp"
+                    android:contentDescription="@string/staff_details" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="@string/event_booking"
+                        android:textColor="@color/white"
+                        android:textSize="27sp" />
+                    <Button
+                        android:id="@+id/btn_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#00000000"
+                        android:padding="15dp"
+                        android:text="@string/expand_here"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/event_booking"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="5dp"
+                    android:contentDescription="@string/event" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="@string/tenants"
+                        android:textColor="@color/white"
+                        android:textSize="27sp" />
+                    <Button
+                        android:id="@+id/btn_tenant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#00000000"
+                        android:padding="15dp"
+                        android:text="@string/expand_here"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/tenants"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="5dp"
+                    android:contentDescription="@string/tenants" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/layout_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="@string/complaints"
+                        android:textColor="@color/white"
+                        android:textSize="27sp" />
+                    <Button
+                        android:id="@+id/btn_complaints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#00000000"
+                        android:padding="15dp"
+                        android:text="@string/generate_now"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/complain"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="5dp"
+                    android:contentDescription="@string/complaints" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

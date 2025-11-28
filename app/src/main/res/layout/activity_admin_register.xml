@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AdminRegister">
+
+    <ImageView
+        android:id="@+id/admin_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Admin Register"
+        android:src="@drawable/signup"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/a_flat_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:inputType="number"
+        android:textColor="#f5f598"
+        android:textColorHint="#f5f598"
+        android:textSize="20sp"
+        android:hint="Flat No"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/a_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:inputType="textPersonName"
+        android:textColor="#f5f598"
+        android:textColorHint="#f5f598"
+        android:textSize="20sp"
+        android:hint="Flat Holder's Name"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/a_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:inputType="phone"
+        android:textColor="#f5f598"
+        android:textColorHint="#f5f598"
+        android:textSize="20sp"
+        android:hint="Mobile No"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/a_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:inputType="textEmailAddress"
+        android:textColor="#f5f598"
+        android:textColorHint="#f5f598"
+        android:textSize="20sp"
+        android:hint="Email"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/a_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:textColor="#f5f598"
+        android:textColorHint="#f5f598"
+        android:textSize="20sp"
+        android:hint="Password"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/a_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:textColor="#f5f598"
+        android:textColorHint="#f5f598"
+        android:textSize="20sp"
+        android:hint="Confirm Password"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/custom_button"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

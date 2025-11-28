@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    tools:context=".AdminAddPlumber">
+
+    <ImageView
+        android:layout_width="390dp"
+        android:layout_height="390dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/plumber"
+        android:contentDescription="@string/plumber" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textInputLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:layout_marginBottom="5dp">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact No"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:layout_marginBottom="5dp">
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:inputType="phone"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

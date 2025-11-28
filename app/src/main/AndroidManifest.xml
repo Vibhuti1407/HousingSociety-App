@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.Dark.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".MemberPayment"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMaintenanceDet"
+            android:exported="false" />
+        <activity
+            android:name=".MemberMaintenanceDet"
+            android:exported="false" />
+        <activity
+            android:name=".MemberGenerateBill"
+            android:exported="false" />
+        <activity
+            android:name=".MemberViewEvent"
+            android:exported="false" />
+        <activity
+            android:name=".MemberAddEvent"
+            android:exported="false" />
+        <activity
+            android:name=".MemberEventDet"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewEvent"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddEvent"
+            android:exported="false" />
+        <activity
+            android:name=".AdminEventDet"
+            android:exported="false" />
+        <activity
+            android:name=".MemberViewTenant"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewTenant"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddTenant"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTenantDet"
+            android:exported="false" />
+        <activity
+            android:name=".MemberViewPlumber"
+            android:exported="false" />
+        <activity
+            android:name=".MemberViewElectrician"
+            android:exported="false" />
+        <activity
+            android:name=".MemberViewCleaner"
+            android:exported="false" />
+        <activity
+            android:name=".MemberStaffDet"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewPlumber"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddPlumber"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewElectrician"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddElectrician"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewCleaner"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddCleaner"
+            android:exported="false" />
+        <activity
+            android:name=".AdminStaffDet"
+            android:exported="false" />
+        <activity
+            android:name=".MemberDirectory"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDirectory"
+            android:exported="false" />
+        <activity
+            android:name=".MemberComplaints"
+            android:exported="false" />
+        <activity
+            android:name=".MemberNotices"
+            android:exported="false" />
+        <activity
+            android:name=".AdminComplaints"
+            android:exported="false" />
+        <activity
+            android:name=".AdminNotices"
+            android:exported="false" />
+        <activity
+            android:name=".MemberForgotPass"
+            android:exported="false" />
+        <activity
+            android:name=".MemberHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".MemberRegister"
+            android:exported="false" />
+        <activity
+            android:name=".AdminRegister"
+            android:exported="false" />
+        <activity
+            android:name=".AdminForgotPass"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".MemberLogin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Dark.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

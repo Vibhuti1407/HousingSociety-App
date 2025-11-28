@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="7dp"
+    android:background="@color/black" >
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/home"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginStart="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flat_no"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvflat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="101"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle=""
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rajesh More"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle=""
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvcontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2673847652"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle=""
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

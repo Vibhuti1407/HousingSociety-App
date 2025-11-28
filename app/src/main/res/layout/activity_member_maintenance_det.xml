@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    tools:context=".MemberMaintenanceDet">
+
+    <TextView
+        android:id="@+id/directory"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/maintenance"
+        android:textColor="#29241E"
+        android:background="@drawable/text_bg"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Month"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:hintTextColor="@color/white">
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputTv1"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="Year"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:hintTextColor="@color/white"            >
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputTv2"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/text_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text=""
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+</LinearLayout>

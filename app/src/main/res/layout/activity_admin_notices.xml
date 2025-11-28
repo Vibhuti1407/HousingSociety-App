@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AdminNotices">
+
+    <TextView
+        android:id="@+id/addnotices"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Notices"
+        android:textColor="#29241E"
+        android:background="@drawable/text_bg"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:hint="@string/date"
+            android:padding="15dp"
+            android:textColor="#f5f598"
+            android:textColorHint="#f5f598"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <DatePicker
+            android:id="@+id/date"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:calendarTextColor="@color/white"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:scaleX="1.1"
+            android:scaleY="1.1"            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/time"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:textColorHint="#f5f598"
+            android:textColor="#f5f598"
+            android:textSize="25sp"
+            android:autofillHints=""
+            android:textStyle="bold"/>
+
+        <TimePicker
+            android:id="@+id/time"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:numbersTextColor="@color/white"
+            android:numbersSelectorColor="@color/white"
+            android:scrollbarSize="10dp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:timePickerMode="spinner"/>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:layout_marginBottom="2dp">
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:inputType="textMultiLine"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/generate"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+</LinearLayout>
