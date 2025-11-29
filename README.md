@@ -8,6 +8,7 @@ This project replaces traditional paper-based processes with a digital platform,
 ## 📌 Overview
 Housing societies often face challenges like manual record-keeping, lack of transparency, and inefficient communication.  
 This project introduces a mobile app that centralizes society operations, automates billing, and streamlines communication between admins and members.
+<img width="1733" height="1085" alt="housingsociety" src="https://github.com/user-attachments/assets/705d1a25-d44a-43f0-ae4c-986baa050765" />
 
 ---
 
